@@ -1,56 +1,81 @@
-# maharashtra-house-price-prediction
-Machine Learning-based web application using Streamlit to predict house prices in Maharashtra based on location, area, and BHK configuration.
+# Maharashtra House Price Prediction
 
-This project is a Machine Learning-based web application that predicts house prices across various locations in Maharashtra. It uses a trained regression model and provides an interactive user interface built with Streamlit for real-time predictions.
+A Machine Learning based web application that predicts house prices in Maharashtra based on user inputs such as location, area (sqft), and BHK. The application is built using Streamlit and provides real-time predictions through an interactive interface.
 
-##Key Features##
-Predict house prices based on location, area (in square feet), and BHK configuration
-*Interactive and user-friendly web interface using Streamlit
-*Real-time prediction using a trained machine learning model
-*Integrated dataset and preprocessing workflow
-*Clean and structured project design
+---
 
-##Tech Stack##
-Python
-Pandas
-NumPy
-Scikit-learn
-Streamlit
-Pickle
+## Project Overview
 
-##Project Structure##
+This project uses a trained regression model to estimate property prices across different regions in Maharashtra. It demonstrates the complete machine learning workflow including data preprocessing, model training, and deployment using a web interface.
 
-*
+---
+
+## Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Pickle
+
+---
+
+## Features
+
+- Select location from Maharashtra
+- Enter area in square feet
+- Choose number of BHK
+- Instant house price prediction
+- Interactive web interface
+- Integrated LinkedIn profile button
+
+---
+
+## Dashboard Preview
+
+![App Screenshot](Prediction project photo.png)
+
+---
+
+## Project Structure
+
 house_price_prediction_maharashtra/
-│
-├── maharashtra_house_price_prediction.py   # Streamlit application
-├── maharashtra_region_model.pickle         # Trained model
-├── column.json                             # Feature columns
-├── analysis_data.csv                       # Dataset
-├── data_model_cleaning.ipynb               # Data preprocessing and model training
-├── util.py                                 # Utility functions
-├── animation.json                          # UI animation
-├── requirements.txt                        # Dependencies
-└── README.md                               # Documentation
+
+├── maharashtra_house_price_prediction.py  
+├── maharashtra_region_model.pickle  
+├── column.json  
+├── analysis_data.csv  
+├── data_model_cleaning.ipynb  
+├── util.py  
+├── animation.json  
+├── Prediction project photo.png  
+├── requirements.txt  
+└── README.md  
+
+---
+
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/house-price-prediction-maharashtra.git
+cd house-price-prediction-maharashtra
 
 
-##Installation##
+### **2. Install Dependencies**
+```bash
+pip install -r requirements.txt
 
-1. Clone the repository ----  git clone https://github.com/your-username/maharashtra-house-price-prediction.git
-cd maharashtra-house-price-prediction
+### **3. Run the Application**
+```bash
+python -m streamlit run maharashtra_house_price_prediction.py
 
-2. Install dependencies --- pip install -r requirements.txt
-3. Running the Application --- python -m streamlit run maharashtra_house_price_prediction.py
 
-##How It Works##
 
-1]The dataset is preprocessed and used to train a regression model
-2]Input features such as location, area, and BHK are encoded into a feature vector
-3]he trained model predicts the estimated house price
-4]The result is displayed instantly through the Streamlit interface
 
-##Output##
-*Web-based interactive interface
-*Real-time house price predictions
-*Structured and responsive layout
+
+
+
 
