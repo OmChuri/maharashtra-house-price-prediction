@@ -65,11 +65,11 @@ cd house-price-prediction-maharashtra
 
 
 ### **2. Install Dependencies**
-```bash
+
 pip install -r requirements.txt
 
 ### **3. Run the Application**
-```bash
+
 python -m streamlit run maharashtra_house_price_prediction.py
 
 
